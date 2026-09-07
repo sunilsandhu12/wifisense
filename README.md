@@ -77,8 +77,5 @@ and fall-like-event detection remain future work. This is a non-clinical
 engineering prototype. See [upgrade status](UPGRADE_STATUS.md) for the prepared
 30 Hz configuration, which is separate from the measured examples above.
 
-This companion pack does not contain the full firmware/application source.
-Add it to the reviewed project repository when publishing. Private development
-logs and original recordings are outside this pack's privacy review scope.
 
 Built with ESP-IDF and informed by [Espressif ESP-CSI](https://github.com/espressif/esp-csi).
