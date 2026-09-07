@@ -1,0 +1,219 @@
+{
+  "schema": "wifisense_public_derived_v1",
+  "source": "MEASURED_RECORDINGS",
+  "purpose": "Illustration and plotting example; not a benchmark or training set",
+  "selection": "The one empty and both cross-link trials meeting saved capture criteria in an earlier three-round study; no selection by signal magnitude",
+  "interval_s": [
+    10,
+    50
+  ],
+  "window_seconds": 1,
+  "time_origin": "First decoded modal-length CSI frame of each receiver in each source session",
+  "labels": "Operator-reported session conditions; no measured trajectory or per-frame action ground truth",
+  "calibration": "empty_01 supplies baseline spectral and RSSI centers; it is not a held-out control",
+  "privacy": "Direct identifiers removed by allowlist export; signal fingerprints may still encode environment-specific patterns",
+  "analyzer_sha256": "56cb5474acbd002f8a58d4886cc9f6845895bcbb86bbb4315e0a337efbd712f3",
+  "frame_decoder_sha256": "bf1a10fee9cfa841d8691978c931277321aa440811c2d791a3f0330db224055c",
+  "packet_rows": 11792,
+  "feature_rows": 240,
+  "sessions": [
+    {
+      "trial": "empty_01",
+      "condition": "empty",
+      "hardware": "classic_esp32",
+      "channel": 6,
+      "requested_tx_rate_hz": 50,
+      "serial_baud": 230400,
+      "recorded_layout": {
+        "fov_ft": [
+          10.0,
+          10.0
+        ],
+        "nodes": {
+          "rx1": {
+            "height_m": 0.15,
+            "x_ft": 1.1,
+            "y_ft": 4.5
+          },
+          "rx2": {
+            "height_m": 0.1,
+            "x_ft": 2.0,
+            "y_ft": 5.2
+          },
+          "tx": {
+            "height_m": 0.25,
+            "x_ft": 1.0,
+            "y_ft": 6.0
+          }
+        }
+      },
+      "firmware_artifacts": [
+        {
+          "role": "tx",
+          "binary_sha256": "c0bd586b07b2ca5f761aca91b7ee41c0e0b2d1e11ea3c63b363d0378bc65d171",
+          "sdkconfig_sha256": "10d0e7cec2001e5325878b7f8ce47873bb879e071794aba9781973fbad300163"
+        },
+        {
+          "role": "rx01",
+          "binary_sha256": "0ce78825351d0df60161ed3cd39752c0b06c3cafb5b8d4601d10a0b5ba46cdac",
+          "sdkconfig_sha256": "2cd9fda51008c25b0582e3c8a167732cfe79991110785c791b7c8f8f08b2f8ab"
+        },
+        {
+          "role": "rx02",
+          "binary_sha256": "b5b632312a747d05720e44cb856acd544bf7725acac59b95b1b03b99f2e4d75a",
+          "sdkconfig_sha256": "9367da1288a9f2bc9dbfe6bbbc812a53e2f078a2f6b922f0578e43c07e70c7b5"
+        }
+      ],
+      "capture_quality": [
+        {
+          "receiver": "RX01",
+          "sequence_retention": 0.9879598662207358,
+          "valid_frames": 2954,
+          "corrupt_records": 0,
+          "corruption_rate": 0.0,
+          "queue_drops": 0
+        },
+        {
+          "receiver": "RX02",
+          "sequence_retention": 0.9926421404682274,
+          "valid_frames": 2968,
+          "corrupt_records": 0,
+          "corruption_rate": 0.0,
+          "queue_drops": 0
+        }
+      ]
+    },
+    {
+      "trial": "walk_01",
+      "condition": "walk_cross_link",
+      "hardware": "classic_esp32",
+      "channel": 6,
+      "requested_tx_rate_hz": 50,
+      "serial_baud": 230400,
+      "recorded_layout": {
+        "fov_ft": [
+          10.0,
+          10.0
+        ],
+        "nodes": {
+          "rx1": {
+            "height_m": 0.15,
+            "x_ft": 1.1,
+            "y_ft": 4.5
+          },
+          "rx2": {
+            "height_m": 0.1,
+            "x_ft": 2.0,
+            "y_ft": 5.2
+          },
+          "tx": {
+            "height_m": 0.25,
+            "x_ft": 1.0,
+            "y_ft": 6.0
+          }
+        }
+      },
+      "firmware_artifacts": [
+        {
+          "role": "tx",
+          "binary_sha256": "c0bd586b07b2ca5f761aca91b7ee41c0e0b2d1e11ea3c63b363d0378bc65d171",
+          "sdkconfig_sha256": "10d0e7cec2001e5325878b7f8ce47873bb879e071794aba9781973fbad300163"
+        },
+        {
+          "role": "rx01",
+          "binary_sha256": "0ce78825351d0df60161ed3cd39752c0b06c3cafb5b8d4601d10a0b5ba46cdac",
+          "sdkconfig_sha256": "2cd9fda51008c25b0582e3c8a167732cfe79991110785c791b7c8f8f08b2f8ab"
+        },
+        {
+          "role": "rx02",
+          "binary_sha256": "b5b632312a747d05720e44cb856acd544bf7725acac59b95b1b03b99f2e4d75a",
+          "sdkconfig_sha256": "9367da1288a9f2bc9dbfe6bbbc812a53e2f078a2f6b922f0578e43c07e70c7b5"
+        }
+      ],
+      "capture_quality": [
+        {
+          "receiver": "RX01",
+          "sequence_retention": 0.9856283422459893,
+          "valid_frames": 2949,
+          "corrupt_records": 1,
+          "corruption_rate": 0.00033898305084745765,
+          "queue_drops": 0
+        },
+        {
+          "receiver": "RX02",
+          "sequence_retention": 0.9832999331997327,
+          "valid_frames": 2944,
+          "corrupt_records": 2,
+          "corruption_rate": 0.0006788866259334691,
+          "queue_drops": 0
+        }
+      ]
+    },
+    {
+      "trial": "walk_02",
+      "condition": "walk_cross_link",
+      "hardware": "classic_esp32",
+      "channel": 6,
+      "requested_tx_rate_hz": 50,
+      "serial_baud": 230400,
+      "recorded_layout": {
+        "fov_ft": [
+          10.0,
+          10.0
+        ],
+        "nodes": {
+          "rx1": {
+            "height_m": 0.15,
+            "x_ft": 1.1,
+            "y_ft": 4.5
+          },
+          "rx2": {
+            "height_m": 0.1,
+            "x_ft": 2.0,
+            "y_ft": 5.2
+          },
+          "tx": {
+            "height_m": 0.25,
+            "x_ft": 1.0,
+            "y_ft": 6.0
+          }
+        }
+      },
+      "firmware_artifacts": [
+        {
+          "role": "tx",
+          "binary_sha256": "c0bd586b07b2ca5f761aca91b7ee41c0e0b2d1e11ea3c63b363d0378bc65d171",
+          "sdkconfig_sha256": "10d0e7cec2001e5325878b7f8ce47873bb879e071794aba9781973fbad300163"
+        },
+        {
+          "role": "rx01",
+          "binary_sha256": "0ce78825351d0df60161ed3cd39752c0b06c3cafb5b8d4601d10a0b5ba46cdac",
+          "sdkconfig_sha256": "2cd9fda51008c25b0582e3c8a167732cfe79991110785c791b7c8f8f08b2f8ab"
+        },
+        {
+          "role": "rx02",
+          "binary_sha256": "b5b632312a747d05720e44cb856acd544bf7725acac59b95b1b03b99f2e4d75a",
+          "sdkconfig_sha256": "9367da1288a9f2bc9dbfe6bbbc812a53e2f078a2f6b922f0578e43c07e70c7b5"
+        }
+      ],
+      "capture_quality": [
+        {
+          "receiver": "RX01",
+          "sequence_retention": 0.9782971619365609,
+          "valid_frames": 2930,
+          "corrupt_records": 1,
+          "corruption_rate": 0.000341180484476288,
+          "queue_drops": 0
+        },
+        {
+          "receiver": "RX02",
+          "sequence_retention": 0.9755934470076897,
+          "valid_frames": 2918,
+          "corrupt_records": 1,
+          "corruption_rate": 0.00034258307639602604,
+          "queue_drops": 0
+        }
+      ]
+    }
+  ]
+}

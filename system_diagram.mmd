@@ -1,0 +1,15 @@
+flowchart LR
+    TX["ESP32 TX: controlled ESP-NOW packets"]
+    RX1["ESP32 RX01: CSI and RSSI"]
+    RX2["ESP32 RX02: CSI and RSSI"]
+    HOST["Python GUI: CRC checks, capture, live health"]
+    STORE["Private raw recordings and setup metadata"]
+    ANALYSIS["Offline baseline calibration and activity features"]
+    EXPORT["De-identified CSV examples and plots"]
+    TX -. "Wireless link 1" .-> RX1
+    TX -. "Wireless link 2" .-> RX2
+    RX1 -->|USB serial| HOST
+    RX2 -->|USB serial| HOST
+    HOST --> STORE
+    STORE --> ANALYSIS
+    ANALYSIS --> EXPORT
