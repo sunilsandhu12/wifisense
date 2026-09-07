@@ -1,6 +1,3 @@
-# wifisense
-ESP32 Wi-Fi CSI motion sensing: measured experiments, signal plots, and reproducible example data.
-
 # WiFiSense: measured-data publication assets
 
 A companion pack for an experimental ESP32 Wi-Fi CSI sensing project. It
