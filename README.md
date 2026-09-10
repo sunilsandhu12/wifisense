@@ -1,6 +1,6 @@
 # WiFiSense: measured-data publication assets
 
-A companion pack for an experimental ESP32 Wi-Fi CSI sensing project. It
+A companion pack for an experimental ESP32 Wi-Fi motion-sensing project. It
 contains an architecture diagram, measured empty-versus-walking figures,
 installation instructions, and a small de-identified example dataset.
 
@@ -73,8 +73,9 @@ recordings and the recorded processing source.
 
 The software supports collection, visualization, and exploratory activity/link
 disturbance analysis. Semantic action classification, pose, precise position,
-and fall-like-event detection remain future work. This is a non-clinical
-engineering prototype. See [upgrade status](UPGRADE_STATUS.md) for the prepared
+and fall-like-event detection are currently being worked on. This is an 
+engineering prototype, with ongoing clinical applications as a fall-detection 
+software for elderly patients in nursing homes. See [upgrade status](UPGRADE_STATUS.md) for the prepared
 30 Hz configuration, which is separate from the measured examples above.
 
 
